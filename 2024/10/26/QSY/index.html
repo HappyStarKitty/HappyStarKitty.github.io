@@ -57,6 +57,10 @@
   
   
   
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/gitalk/dist/gitalk.css">
+
+  
   
 <script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"></script>
 
@@ -233,7 +237,7 @@
         
           
           
-            <img data-src="/covers/Image_1727540676598.jpg" data-sizes="auto" alt="大一秋冬 课程回忆录" class="lazyload">
+            <img data-src="/covers/Image_1728916030959.jpg" data-sizes="auto" alt="大一秋冬 课程回忆录" class="lazyload">
           
         
         <a href="/2024/10/30/freshman-fall-winter/"></a>
@@ -250,14 +254,14 @@
       
         
         
-          <img data-src="/covers/Image_241175342504455.jpg" data-sizes="auto" alt="ChatRoom" class="lazyload">
+          <img data-src="/covers/Image_1728838069325.jpg" data-sizes="auto" alt="ChatRoom Development Guide" class="lazyload">
         
       
       <a href="/2024/09/06/ChatRoom/"></a>
       <div class="article-nav-caption">后一篇</div>
       <h3 class="article-nav-title">
         
-          ChatRoom
+          ChatRoom Development Guide
         
       </h3>
     </div>
@@ -270,6 +274,8 @@
 
 
 
+
+  <div id="comments" class="gtcomment"></div>
 
 
 
@@ -373,10 +379,10 @@
       
         <div>
           <span class="icon-brush"></span>
-          4.8k
+          5k
           &nbsp;|&nbsp;
           <span class="icon-coffee"></span>
-          00:19
+          00:20
         </div>
       
       
@@ -532,6 +538,26 @@
 
 
 
+
+  
+<script src="https://npm.webcache.cn/gitalk/dist/gitalk.min.js" data-pjax></script>
+
+  
+  <script data-pjax>
+    var gitalkId = location.pathname;
+    var gitalk = new Gitalk({
+      clientID: 'Ov23liXNc2AhByKXVkaJ',
+      clientSecret: 'f1e2eb88056956da39e17905b2f4aa7c6f7806c7',
+      repo: 'https://github.com/HappyStarKitty/GitalkComments.git',
+      owner: 'HappyStarKitty',
+      admin: "HappyStarKitty",
+      id: gitalkId, // Ensure uniqueness and length less than 50
+      distractionFreeMode: false // Facebook-like distraction free mode
+    })
+    if (document.getElementById('comments')) {
+      gitalk.render('comments')
+    }
+  </script>
 
 
 

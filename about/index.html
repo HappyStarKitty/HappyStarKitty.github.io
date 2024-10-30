@@ -56,6 +56,10 @@
   
   
   
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/gitalk/dist/gitalk.css">
+
+  
   
 <script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"></script>
 
@@ -263,6 +267,8 @@
 
 
 
+  <div id="comments" class="gtcomment"></div>
+
 
 
 </section>
@@ -351,10 +357,10 @@
       
         <div>
           <span class="icon-brush"></span>
-          4.8k
+          5k
           &nbsp;|&nbsp;
           <span class="icon-coffee"></span>
-          00:19
+          00:20
         </div>
       
       
@@ -496,6 +502,26 @@
 
 
 
+
+  
+<script src="https://npm.webcache.cn/gitalk/dist/gitalk.min.js" data-pjax></script>
+
+  
+  <script data-pjax>
+    var gitalkId = location.pathname;
+    var gitalk = new Gitalk({
+      clientID: 'Ov23liXNc2AhByKXVkaJ',
+      clientSecret: 'f1e2eb88056956da39e17905b2f4aa7c6f7806c7',
+      repo: 'https://github.com/HappyStarKitty/GitalkComments.git',
+      owner: 'HappyStarKitty',
+      admin: "HappyStarKitty",
+      id: gitalkId, // Ensure uniqueness and length less than 50
+      distractionFreeMode: false // Facebook-like distraction free mode
+    })
+    if (document.getElementById('comments')) {
+      gitalk.render('comments')
+    }
+  </script>
 
 
 

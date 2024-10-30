@@ -14,7 +14,7 @@
   
   
   <title>
-    ChatRoom |
+    ChatRoom Development Guide |
     
     DakiMoon&#39;s Blog
   </title>
@@ -28,13 +28,13 @@
 
   <meta name="description" content="No Game No Life">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ChatRoom">
+<meta property="og:title" content="ChatRoom Development Guide">
 <meta property="og:url" content="http://happystarkitty.github.io/2024/09/06/ChatRoom/index.html">
 <meta property="og:site_name" content="DakiMoon&#39;s Blog">
 <meta property="og:description" content="No Game No Life">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-09-06T04:12:14.000Z">
-<meta property="article:modified_time" content="2024-10-26T01:11:24.852Z">
+<meta property="article:modified_time" content="2024-10-30T15:57:21.548Z">
 <meta property="article:author" content="DakiMoon">
 <meta property="article:tag" content="fullstack">
 <meta name="twitter:card" content="summary">
@@ -56,6 +56,10 @@
 
   
   
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/gitalk/dist/gitalk.css">
+
   
   
 <script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"></script>
@@ -163,7 +167,7 @@
 <header id="header">
   
     
-      <img fetchpriority="high" src="/images/banner.webp" alt="ChatRoom">
+      <img fetchpriority="high" src="/images/banner.webp" alt="ChatRoom Development Guide">
     
   
   <div id="header-outer" class="outer">
@@ -173,7 +177,7 @@
           
           
             <a href="/" id="logo">
-              <h1>ChatRoom</h1>
+              <h1>ChatRoom Development Guide</h1>
             </a>
           
         
@@ -196,7 +200,7 @@
       <div class="article-date wow slideInLeft">
   <a href="/2024/09/06/ChatRoom/" class="article-date-link">
     <time datetime="2024-09-06T04:12:14.000Z" itemprop="datePublished">2024-09-06</time>
-    <time style="display: none;" id="post-update-time">2024-10-26</time>
+    <time style="display: none;" id="post-update-time">2024-10-30</time>
   </a>
 </div>
 
@@ -233,7 +237,7 @@
         
           
           
-            <img data-src="/covers/Image_1727486401067.jpg" data-sizes="auto" alt="QSY Development Guide" class="lazyload">
+            <img data-src="/covers/Image_164573422430865.jpg" data-sizes="auto" alt="QSY Development Guide" class="lazyload">
           
         
         <a href="/2024/10/26/QSY/"></a>
@@ -250,14 +254,14 @@
       
         
         
-          <img data-src="/covers/illust_100516670_20240817_001736.jpg" data-sizes="auto" alt="CommentArea" class="lazyload">
+          <img data-src="/covers/illust_106842112_20240817_001724.jpg" data-sizes="auto" alt="CommentArea Development Guide" class="lazyload">
         
       
       <a href="/2024/07/21/CommentArea/"></a>
       <div class="article-nav-caption">后一篇</div>
       <h3 class="article-nav-title">
         
-          CommentArea
+          CommentArea Development Guide
         
       </h3>
     </div>
@@ -270,6 +274,8 @@
 
 
 
+
+  <div id="comments" class="gtcomment"></div>
 
 
 
@@ -373,10 +379,10 @@
       
         <div>
           <span class="icon-brush"></span>
-          4.8k
+          5k
           &nbsp;|&nbsp;
           <span class="icon-coffee"></span>
-          00:19
+          00:20
         </div>
       
       
@@ -532,6 +538,26 @@
 
 
 
+
+  
+<script src="https://npm.webcache.cn/gitalk/dist/gitalk.min.js" data-pjax></script>
+
+  
+  <script data-pjax>
+    var gitalkId = location.pathname;
+    var gitalk = new Gitalk({
+      clientID: 'Ov23liXNc2AhByKXVkaJ',
+      clientSecret: 'f1e2eb88056956da39e17905b2f4aa7c6f7806c7',
+      repo: 'https://github.com/HappyStarKitty/GitalkComments.git',
+      owner: 'HappyStarKitty',
+      admin: "HappyStarKitty",
+      id: gitalkId, // Ensure uniqueness and length less than 50
+      distractionFreeMode: false // Facebook-like distraction free mode
+    })
+    if (document.getElementById('comments')) {
+      gitalk.render('comments')
+    }
+  </script>
 
 
 
