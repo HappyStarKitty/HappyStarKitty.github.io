@@ -1,0 +1,713 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-CN"  data-theme="dark" >
+  <head>
+  <meta charset="utf-8">
+  
+
+  
+
+  
+
+  
+  <script>window.icon_font = '4552607_tq6stt6tcg';window.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};</script>
+  
+  
+  <title>
+    大二秋冬 课程回忆录 |
+    
+    DakiMoon&#39;s Blog
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CUbuntu%20Mono:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CUbuntu%20Mono:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
+  
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_tq6stt6tcg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+<link rel="stylesheet" href="/css/loader.css">
+
+  <meta name="description" content="前言目录数理基础课概率论与数理统计 学分： 任课教师：赵敏智 教材： 分数构成：  大学物理（甲） 学分： 任课教师：谢小平 教材：《大学物理》 分数构成：  大学物理实验专业基础课理论力学 学分： 任课教师：王永 金肖铃 教材： 分数构成  Python数据分析 学分： 任课教师： 教材：&#x2F; 分数构成：平时  个人感觉挺适合Python新手的，不过我自己学过所以根本没听。 模糊控制和人">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大二秋冬 课程回忆录">
+<meta property="og:url" content="http://happystarkitty.github.io/2024/11/18/sophomore-fall-winter/index.html">
+<meta property="og:site_name" content="DakiMoon&#39;s Blog">
+<meta property="og:description" content="前言目录数理基础课概率论与数理统计 学分： 任课教师：赵敏智 教材： 分数构成：  大学物理（甲） 学分： 任课教师：谢小平 教材：《大学物理》 分数构成：  大学物理实验专业基础课理论力学 学分： 任课教师：王永 金肖铃 教材： 分数构成  Python数据分析 学分： 任课教师： 教材：&#x2F; 分数构成：平时  个人感觉挺适合Python新手的，不过我自己学过所以根本没听。 模糊控制和人">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-11-18T06:21:39.000Z">
+<meta property="article:modified_time" content="2024-11-27T00:41:11.810Z">
+<meta property="article:author" content="DakiMoon">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="DakiMoon's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css">
+
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/katex@0.16.9/dist/katex.min.css">
+
+  
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/gitalk/dist/gitalk.css">
+
+  
+  
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"></script>
+
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/wowjs@1.1.3/css/libs/animate.css">
+
+    
+<script src="https://npm.webcache.cn/wowjs@1.1.3/dist/wow.min.js"></script>
+
+    <script>
+      new WOW({
+        offset: 0,
+        mobile: true,
+        live: false
+      }).init();
+    </script>
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+  <body>
+    
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi">
+        <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+          <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="#ff6e6b" />
+          <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z" fill="#fd0d00" />
+          <path d="M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95" fill="#fd0d00" />
+        </svg>
+      </div>
+      <div class="loading-word">少女祈祷中</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script>
+
+<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav">
+    
+      <span class="main-nav-link-wrap">
+        <span class="main-nav-icon"></span>
+        <a class="main-nav-link" href="/">首页</a>
+      </span>
+    
+      <span class="main-nav-link-wrap">
+        <span class="main-nav-icon"></span>
+        <a class="main-nav-link" href="/archives">归档</a>
+      </span>
+    
+      <span class="main-nav-link-wrap">
+        <span class="main-nav-icon"></span>
+        <a class="main-nav-link" href="/about">关于</a>
+      </span>
+    
+      <span class="main-nav-link-wrap">
+        <span class="main-nav-icon"></span>
+        <a class="main-nav-link" href="/friend">友链</a>
+      </span>
+    
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav">
+    
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+    
+    
+    
+      <a id="nav-search-btn" class="nav-icon popup-trigger" title="搜索"></a>
+    
+  </nav>
+</div>
+<header id="header">
+  
+    
+      <img fetchpriority="high" src="/images/banner.webp" alt="大二秋冬 课程回忆录">
+    
+  
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <div id="logo-wrap">
+        
+          
+          
+            <a href="/" id="logo">
+              <h1>大二秋冬 课程回忆录</h1>
+            </a>
+          
+        
+      </div>
+      
+        
+        <h2 id="subtitle-wrap">
+          
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+        <div id="content" class="outer">
+          
+          <section id="main"><article id="post-sophomore-fall-winter" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner">
+    <div class="article-meta">
+      <div class="article-date wow slideInLeft">
+  <a href="/2024/11/18/sophomore-fall-winter/" class="article-date-link">
+    <time datetime="2024-11-18T06:21:39.000Z" itemprop="datePublished">2024-11-18</time>
+    <time style="display: none;" id="post-update-time">2024-11-27</time>
+  </a>
+</div>
+
+      
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h2 id="数理基础课"><a href="#数理基础课" class="headerlink" title="数理基础课"></a>数理基础课</h2><h3 id="概率论与数理统计"><a href="#概率论与数理统计" class="headerlink" title="概率论与数理统计"></a>概率论与数理统计</h3><ul>
+<li>学分：</li>
+<li>任课教师：赵敏智</li>
+<li>教材：</li>
+<li>分数构成：</li>
+</ul>
+<h3 id="大学物理（甲）"><a href="#大学物理（甲）" class="headerlink" title="大学物理（甲）"></a>大学物理（甲）</h3><ul>
+<li>学分：</li>
+<li>任课教师：谢小平</li>
+<li>教材：《大学物理》</li>
+<li>分数构成：</li>
+</ul>
+<h3 id="大学物理实验"><a href="#大学物理实验" class="headerlink" title="大学物理实验"></a>大学物理实验</h3><h2 id="专业基础课"><a href="#专业基础课" class="headerlink" title="专业基础课"></a>专业基础课</h2><h3 id="理论力学"><a href="#理论力学" class="headerlink" title="理论力学"></a>理论力学</h3><ul>
+<li>学分：</li>
+<li>任课教师：王永 金肖铃</li>
+<li>教材：</li>
+<li>分数构成</li>
+</ul>
+<h3 id="Python数据分析"><a href="#Python数据分析" class="headerlink" title="Python数据分析"></a>Python数据分析</h3><ul>
+<li>学分：</li>
+<li>任课教师：</li>
+<li>教材：&#x2F;</li>
+<li>分数构成：平时</li>
+</ul>
+<p>个人感觉挺适合Python新手的，不过我自己学过所以根本没听。</p>
+<h3 id="模糊控制和人工神经网络"><a href="#模糊控制和人工神经网络" class="headerlink" title="模糊控制和人工神经网络"></a>模糊控制和人工神经网络</h3><ul>
+<li>学分：</li>
+<li>任课教师：</li>
+<li>教材：&#x2F;</li>
+<li>分数构成：</li>
+</ul>
+<p>大学体验到的第一门全英文专业课。因为上课人数只有十人左右，所以根本无法翘课，而且老师非常喜欢提问，基本每次课每人都会点到三次以上。</p>
+<h2 id="通识课"><a href="#通识课" class="headerlink" title="通识课"></a>通识课</h2><h3 id="深空探测"><a href="#深空探测" class="headerlink" title="深空探测"></a>深空探测</h3><ul>
+<li>学分：1.5</li>
+<li>任课教师：徐之海 李奇 陈跃庭</li>
+<li>教材：（我没有买）</li>
+<li>分数构成：</li>
+</ul>
+<p>事少分高的好课，非常推荐。徐之海老师对深空探测的热爱溢于言表。</p>
+<p>平时作业有谈谈对第一堂课的感受、讲述一个感人的航天故事、介绍一次近期的深空探测经历，内容要求图文并茂，以Word的形式呈现，注意页数和格式就行。中间有一次随堂测验作为签到，比较简单。大作业是构思一个可以搭载在月球载人探测或月球基地的实验，需要PPT展示。大作业是获得高分的关键。被评选为优秀作品并参加答辩就能保证期末分数不低于90分，性价比极高。课堂发言可以加分，尤其是最后一节课展示的时候提问发言的机会相当多。</p>
+<h3 id="电工电子工程训练"><a href="#电工电子工程训练" class="headerlink" title="电工电子工程训练"></a>电工电子工程训练</h3><ul>
+<li>学分：1.5</li>
+<li>任课教师：赵江萍</li>
+<li>教材：《电工电子工程训练》</li>
+<li>分数构成：</li>
+</ul>
+<p>赵江萍老师相当耐心，而且为了提高我们的绩点将原来的五级制改为百分制。不过比较适合动手能力强的同学。</p>
+<h3 id="物联网与智慧系统"><a href="#物联网与智慧系统" class="headerlink" title="物联网与智慧系统"></a>物联网与智慧系统</h3><ul>
+<li>学分：1.5</li>
+<li>任课教师：王智 叶炜</li>
+<li>教材：&#x2F;</li>
+<li>分数构成：</li>
+</ul>
+<p>事少分高的好课，可水可听，非常推荐。平时作业共有两次，一个是小组作业根据物联网的主题制作PPT并录制讲解视频，另一个是设计一个定位导航的技术方案。大作业是翻译一篇定位导航主题的外文文献并根据内容制作PPT。无签到。笔者基本都是使用AI生成大纲后再自己结合文献资料进行润色，助教老师设置的ddl比较宽容，给分也很好。</p>
+<h3 id="人工智能基础（A）"><a href="#人工智能基础（A）" class="headerlink" title="人工智能基础（A）"></a>人工智能基础（A）</h3><ul>
+<li>学分：</li>
+<li>任课教师：朱朝阳</li>
+<li>教材：&#x2F;（《人工智能：一种现代的方法》挺不错的）</li>
+<li>分数构成：</li>
+</ul>
+<p>作为大计基的平替，个人认为进步了很多。</p>
+<h3 id="核能战略前沿"><a href="#核能战略前沿" class="headerlink" title="核能战略前沿"></a>核能战略前沿</h3><ul>
+<li>学分：</li>
+<li>任课教师：</li>
+<li>教材：</li>
+<li>分数构成：</li>
+</ul>
+<p>事情非常多的通识课。每周都要进行pre，而且老师专业水平挺强，提问一针见血。如果pre没有充分准备会极容易被问倒。</p>
+<h3 id="材料与人类文明"><a href="#材料与人类文明" class="headerlink" title="材料与人类文明"></a>材料与人类文明</h3><h2 id="跨专业课"><a href="#跨专业课" class="headerlink" title="跨专业课"></a>跨专业课</h2><h3 id="复变函数与积分变换"><a href="#复变函数与积分变换" class="headerlink" title="复变函数与积分变换"></a>复变函数与积分变换</h3><ul>
+<li>学分：1.5</li>
+<li>任课教师：孙业顺</li>
+<li>教材：《复变函数与积分变换》</li>
+<li>分数构成：</li>
+</ul>
+<h2 id="军事体育课"><a href="#军事体育课" class="headerlink" title="军事体育课"></a>军事体育课</h2><h3 id="军事理论"><a href="#军事理论" class="headerlink" title="军事理论"></a>军事理论</h3><ul>
+<li>学分：</li>
+<li>任课教师：沈丽萍</li>
+<li>教材：</li>
+<li>分数构成：</li>
+</ul>
+<h3 id="普通体育课"><a href="#普通体育课" class="headerlink" title="普通体育课"></a>普通体育课</h3>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+    
+  <nav id="article-nav" class="wow fadeInUp">
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        
+        
+          <img data-src="/covers/illust_118095313_20240817_001511.png" data-sizes="auto" alt="东方流宵梦" class="lazyload">
+        
+      
+      <a href="/2024/10/31/touhou/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          东方流宵梦
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+  
+</article>
+
+
+
+
+  <div id="comments" class="gtcomment"></div>
+
+
+
+</section>
+          
+            <aside id="sidebar">
+  <div class="sidebar-wrap wow fadeInRight wrap-sticky">
+    
+      <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-number">2.</span> <span class="toc-text">目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80%E8%AF%BE"><span class="toc-number">3.</span> <span class="toc-text">数理基础课</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1"><span class="toc-number">3.1.</span> <span class="toc-text">概率论与数理统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%EF%BC%88%E7%94%B2%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">大学物理（甲）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C"><span class="toc-number">3.3.</span> <span class="toc-text">大学物理实验</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%93%E4%B8%9A%E5%9F%BA%E7%A1%80%E8%AF%BE"><span class="toc-number">4.</span> <span class="toc-text">专业基础课</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6"><span class="toc-number">4.1.</span> <span class="toc-text">理论力学</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span class="toc-number">4.2.</span> <span class="toc-text">Python数据分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E7%B3%8A%E6%8E%A7%E5%88%B6%E5%92%8C%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C"><span class="toc-number">4.3.</span> <span class="toc-text">模糊控制和人工神经网络</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9A%E8%AF%86%E8%AF%BE"><span class="toc-number">5.</span> <span class="toc-text">通识课</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%B1%E7%A9%BA%E6%8E%A2%E6%B5%8B"><span class="toc-number">5.1.</span> <span class="toc-text">深空探测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B5%E5%B7%A5%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E8%AE%AD%E7%BB%83"><span class="toc-number">5.2.</span> <span class="toc-text">电工电子工程训练</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E4%B8%8E%E6%99%BA%E6%85%A7%E7%B3%BB%E7%BB%9F"><span class="toc-number">5.3.</span> <span class="toc-text">物联网与智慧系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%9F%BA%E7%A1%80%EF%BC%88A%EF%BC%89"><span class="toc-number">5.4.</span> <span class="toc-text">人工智能基础（A）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B8%E8%83%BD%E6%88%98%E7%95%A5%E5%89%8D%E6%B2%BF"><span class="toc-number">5.5.</span> <span class="toc-text">核能战略前沿</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%90%E6%96%99%E4%B8%8E%E4%BA%BA%E7%B1%BB%E6%96%87%E6%98%8E"><span class="toc-number">5.6.</span> <span class="toc-text">材料与人类文明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%A8%E4%B8%93%E4%B8%9A%E8%AF%BE"><span class="toc-number">6.</span> <span class="toc-text">跨专业课</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E7%A7%AF%E5%88%86%E5%8F%98%E6%8D%A2"><span class="toc-number">6.1.</span> <span class="toc-text">复变函数与积分变换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%9B%E4%BA%8B%E4%BD%93%E8%82%B2%E8%AF%BE"><span class="toc-number">7.</span> <span class="toc-text">军事体育课</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%9B%E4%BA%8B%E7%90%86%E8%AE%BA"><span class="toc-number">7.1.</span> <span class="toc-text">军事理论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E4%BD%93%E8%82%B2%E8%AF%BE"><span class="toc-number">7.2.</span> <span class="toc-text">普通体育课</span></a></li></ol></li></ol>
+      
+  </div>
+</div>
+</div>
+      <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="DakiMoon" class="lazyload">
+  <div class="sidebar-author-name">DakiMoon</div>
+  <div class="sidebar-description">No Game No Life</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">6</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">2</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+</div>
+<div class="sidebar-menu">
+  
+    <div class="sidebar-menu-link-wrap">
+      <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+      <span class="sidebar-menu-icon"></span>
+      <div class="sidebar-menu-link">首页</div>
+    </div>
+  
+    <div class="sidebar-menu-link-wrap">
+      <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+      <span class="sidebar-menu-icon"></span>
+      <div class="sidebar-menu-link">归档</div>
+    </div>
+  
+    <div class="sidebar-menu-link-wrap">
+      <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+      <span class="sidebar-menu-icon"></span>
+      <div class="sidebar-menu-link">关于</div>
+    </div>
+  
+    <div class="sidebar-menu-link-wrap">
+      <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+      <span class="sidebar-menu-icon"></span>
+      <div class="sidebar-menu-link">友链</div>
+    </div>
+  
+</div>
+</div>
+    
+    
+      <div class="sidebar-btn-wrapper" style="position:static">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div>
+    
+  </div>
+
+  
+</aside>
+
+          
+        </div>
+        <footer id="footer" class="wow fadeInUp">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div class="outer">
+    <div id="footer-info">
+      
+      <div>
+        <span class="icon-copyright"></span>
+        2024-2024
+        <span class="footer-info-sep"></span>
+        DakiMoon
+      </div>
+      
+        <div>
+          基于&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;
+          Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" target="_blank">Reimu</a>
+        </div>
+      
+      
+        <div>
+          <span class="icon-brush"></span>
+          7.2k
+          &nbsp;|&nbsp;
+          <span class="icon-coffee"></span>
+          00:24
+        </div>
+      
+      
+        <div>
+          <span class="icon-eye"></span>
+          <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+          &nbsp;|&nbsp;
+          <span class="icon-user"></span>
+          <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+        </div>
+      
+    </div>
+  </div>
+</footer>
+
+        <div class="sidebar-top">
+          <img src="/images/taichi.png" height="50" width="50" alt="backtop" />
+          <div class="arrow-up"></div>
+        </div>
+        <div id="mask"></div>
+      </div>
+      <nav id="mobile-nav">
+  <div class="sidebar-wrap">
+    
+      <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-number">2.</span> <span class="toc-text">目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80%E8%AF%BE"><span class="toc-number">3.</span> <span class="toc-text">数理基础课</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1"><span class="toc-number">3.1.</span> <span class="toc-text">概率论与数理统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%EF%BC%88%E7%94%B2%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">大学物理（甲）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C"><span class="toc-number">3.3.</span> <span class="toc-text">大学物理实验</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%93%E4%B8%9A%E5%9F%BA%E7%A1%80%E8%AF%BE"><span class="toc-number">4.</span> <span class="toc-text">专业基础课</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6"><span class="toc-number">4.1.</span> <span class="toc-text">理论力学</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span class="toc-number">4.2.</span> <span class="toc-text">Python数据分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E7%B3%8A%E6%8E%A7%E5%88%B6%E5%92%8C%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C"><span class="toc-number">4.3.</span> <span class="toc-text">模糊控制和人工神经网络</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9A%E8%AF%86%E8%AF%BE"><span class="toc-number">5.</span> <span class="toc-text">通识课</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%B1%E7%A9%BA%E6%8E%A2%E6%B5%8B"><span class="toc-number">5.1.</span> <span class="toc-text">深空探测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B5%E5%B7%A5%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E8%AE%AD%E7%BB%83"><span class="toc-number">5.2.</span> <span class="toc-text">电工电子工程训练</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E4%B8%8E%E6%99%BA%E6%85%A7%E7%B3%BB%E7%BB%9F"><span class="toc-number">5.3.</span> <span class="toc-text">物联网与智慧系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%9F%BA%E7%A1%80%EF%BC%88A%EF%BC%89"><span class="toc-number">5.4.</span> <span class="toc-text">人工智能基础（A）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B8%E8%83%BD%E6%88%98%E7%95%A5%E5%89%8D%E6%B2%BF"><span class="toc-number">5.5.</span> <span class="toc-text">核能战略前沿</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%90%E6%96%99%E4%B8%8E%E4%BA%BA%E7%B1%BB%E6%96%87%E6%98%8E"><span class="toc-number">5.6.</span> <span class="toc-text">材料与人类文明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%A8%E4%B8%93%E4%B8%9A%E8%AF%BE"><span class="toc-number">6.</span> <span class="toc-text">跨专业课</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E7%A7%AF%E5%88%86%E5%8F%98%E6%8D%A2"><span class="toc-number">6.1.</span> <span class="toc-text">复变函数与积分变换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%9B%E4%BA%8B%E4%BD%93%E8%82%B2%E8%AF%BE"><span class="toc-number">7.</span> <span class="toc-text">军事体育课</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%9B%E4%BA%8B%E7%90%86%E8%AE%BA"><span class="toc-number">7.1.</span> <span class="toc-text">军事理论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E4%BD%93%E8%82%B2%E8%AF%BE"><span class="toc-number">7.2.</span> <span class="toc-text">普通体育课</span></a></li></ol></li></ol>
+      
+  </div>
+</div>
+</div>
+      <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="DakiMoon" class="lazyload">
+  <div class="sidebar-author-name">DakiMoon</div>
+  <div class="sidebar-description">No Game No Life</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">6</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">2</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+</div>
+<div class="sidebar-menu">
+  
+    <div class="sidebar-menu-link-wrap">
+      <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+      <span class="sidebar-menu-icon"></span>
+      <div class="sidebar-menu-link">首页</div>
+    </div>
+  
+    <div class="sidebar-menu-link-wrap">
+      <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+      <span class="sidebar-menu-icon"></span>
+      <div class="sidebar-menu-link">归档</div>
+    </div>
+  
+    <div class="sidebar-menu-link-wrap">
+      <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+      <span class="sidebar-menu-icon"></span>
+      <div class="sidebar-menu-link">关于</div>
+    </div>
+  
+    <div class="sidebar-menu-link-wrap">
+      <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+      <span class="sidebar-menu-icon"></span>
+      <div class="sidebar-menu-link">友链</div>
+    </div>
+  
+</div>
+</div>
+    
+  </div>
+  
+    <div class="sidebar-btn-wrapper">
+      <div class="sidebar-toc-btn current"></div>
+      <div class="sidebar-common-btn"></div>
+    </div>
+  
+</nav>
+
+    </div>
+    <div class="site-search">
+      <div class="reimu-popup popup">
+        <div class="reimu-search">
+          <div class="reimu-search-input-icon"></div>
+          <div class="reimu-search-input" id="reimu-search-input"></div>
+          <div class="popup-btn-close"></div>
+        </div>
+        <div class="reimu-results">
+          <div id="reimu-stats"></div>
+          <div id="reimu-hits"></div>
+          <div id="reimu-pagination" class="reimu-pagination"></div>
+        </div>
+      </div>
+    </div>
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+<script type="module" data-pjax>
+  import PhotoSwipeLightbox from "https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.js";
+  
+  const pswp = () => {
+    if (_$$('.article-entry a.article-gallery-item').length > 0) {
+      new PhotoSwipeLightbox({
+        gallery: '.article-entry',
+        children: 'a.article-gallery-item',
+        pswpModule: () => import("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.js")
+      }).init();
+    }
+    if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+      new PhotoSwipeLightbox({
+        gallery: '.article-gallery',
+        children: 'a.article-gallery-item',
+        pswpModule: () => import("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.js")
+      }).init();
+    }
+    window.lightboxStatus = 'done';
+    window.removeEventListener('lightbox:ready', pswp);
+  }
+  if(window.lightboxStatus === 'ready') {
+    pswp()
+  } else {
+    window.addEventListener('lightbox:ready', pswp);
+  }
+</script>
+
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/gitalk/dist/gitalk.min.js" data-pjax></script>
+
+  
+  <script data-pjax>
+    var gitalkId = location.pathname;
+    var gitalk = new Gitalk({
+      clientID: 'Ov23liXNc2AhByKXVkaJ',
+      clientSecret: 'f1e2eb88056956da39e17905b2f4aa7c6f7806c7',
+      repo: 'https://github.com/HappyStarKitty/GitalkComments.git',
+      owner: 'HappyStarKitty',
+      admin: "HappyStarKitty",
+      id: gitalkId, // Ensure uniqueness and length less than 50
+      distractionFreeMode: false // Facebook-like distraction free mode
+    })
+    if (document.getElementById('comments')) {
+      gitalk.render('comments')
+    }
+  </script>
+
+
+
+
+
+
+
+  
+<script src="/js/generator_search.js"></script>
+
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/mouse-firework@0.0.4/dist/index.umd.js"></script>
+
+  <script>
+    firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["#ff5252","#ff7c7c","#ffafaf","#ffd0d0"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["#ff0000"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'))
+  </script>
+
+
+
+
+
+  <script>
+    function initLive2d() {
+      live2d.init("https://fastly.jsdelivr.net/gh/MliKiowa/plugin-live2d/", {themeTipsPath: ""});
+    }
+  </script>
+  
+<script src="https://fastly.jsdelivr.net/gh/MliKiowa/plugin-live2d/js/live2d-autoload.js" onload="initLive2d &amp;&amp; initLive2d()" async></script>
+
+
+
+
+  
+<script src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+
+  <script data-pjax>
+    quicklink.listen({
+      timeout: 3000,
+      priority: true,
+      ignores: []
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div>
+    
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '0.2.3' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+  <!-- hexo injector body_end start -->
+<script src="/js/insert_highlight.js" data-pjax></script>
+<!-- hexo injector body_end end --></body>
+  </html>
+

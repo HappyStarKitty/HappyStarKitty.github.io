@@ -26,15 +26,15 @@
   
 <link rel="stylesheet" href="/css/loader.css">
 
-  <meta name="description" content="No Game No Life">
+  <meta name="description" content="第一次使用 Next.js 框架写的前端小项目，写得还蛮久的，遂动笔记录一番。 我并不打算写成一篇事无巨细的教程，第一本人没啥实力也没有精力，第二你应该学会自己翻阅文档，第三也没有人看。于是随便写写自己遇到的一些坑和感悟。 构建页面外观初始化根据官方文档的指示走就行，而且 Next.js 的安装是交互式的，非常方便。 1npx create-next-app@latest --typescript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="QSY Development Guide">
 <meta property="og:url" content="http://happystarkitty.github.io/2024/10/26/QSY/index.html">
 <meta property="og:site_name" content="DakiMoon&#39;s Blog">
-<meta property="og:description" content="No Game No Life">
+<meta property="og:description" content="第一次使用 Next.js 框架写的前端小项目，写得还蛮久的，遂动笔记录一番。 我并不打算写成一篇事无巨细的教程，第一本人没啥实力也没有精力，第二你应该学会自己翻阅文档，第三也没有人看。于是随便写写自己遇到的一些坑和感悟。 构建页面外观初始化根据官方文档的指示走就行，而且 Next.js 的安装是交互式的，非常方便。 1npx create-next-app@latest --typescript">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-10-26T01:07:15.000Z">
-<meta property="article:modified_time" content="2024-10-30T12:39:44.080Z">
+<meta property="article:modified_time" content="2024-11-26T04:00:28.129Z">
 <meta property="article:author" content="DakiMoon">
 <meta property="article:tag" content="frondend">
 <meta name="twitter:card" content="summary">
@@ -200,7 +200,7 @@
       <div class="article-date wow slideInLeft">
   <a href="/2024/10/26/QSY/" class="article-date-link">
     <time datetime="2024-10-26T01:07:15.000Z" itemprop="datePublished">2024-10-26</time>
-    <time style="display: none;" id="post-update-time">2024-10-30</time>
+    <time style="display: none;" id="post-update-time">2024-11-26</time>
   </a>
 </div>
 
@@ -213,7 +213,24 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
       
-        
+        <p>第一次使用 Next.js 框架写的前端小项目，写得还蛮久的，遂动笔记录一番。</p>
+<p>我并不打算写成一篇事无巨细的教程，第一本人没啥实力也没有精力，第二你应该学会自己翻阅文档，<del>第三也没有人看</del>。于是随便写写自己遇到的一些坑和感悟。</p>
+<h2 id="构建页面外观"><a href="#构建页面外观" class="headerlink" title="构建页面外观"></a>构建页面外观</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>根据官方文档的指示走就行，而且 Next.js 的安装是交互式的，非常方便。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx create-next-app@latest --typescript </span><br></pre></td></tr></table></figure>
+
+<p>然后 <code>npm run dev</code> 即可。</p>
+<p>有遇到过运行显示 <code>favicon.ico</code> 文件过大的情况，如果是在 <code>app</code> folder 可以将其移至 <code>public</code> folder 下。btw，文件分类管理十分重要。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-- pages <span class="comment"># 页面文件</span></span><br><span class="line">-- public <span class="comment"># 静态资源如icon、picture等</span></span><br><span class="line">-- components <span class="comment"># 可复用组件</span></span><br></pre></td></tr></table></figure>
+
+<p>根页面默认是 <code>pages/index.tsx</code>，其路由是 <code>/</code>。</p>
+<h3 id="CSS-样式"><a href="#CSS-样式" class="headerlink" title="CSS 样式"></a>CSS 样式</h3><p>听说CSS预处理器挺好用，不过我还没学。</p>
+<p>在 ts 中 直接糊 CSS 需要使用驼峰命名法，举个栗子：</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">``</span><span class="string">`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">对于组件嵌套的情况，最好把 `</span>container<span class="string">` 和 `</span>content<span class="string">` 分离出来，即对于一个子组件，其 `</span>margin<span class="string">` 属性不应单独设置，而是由其 `</span>container<span class="string">`（通常是 div） 进行控制。否则你会经常遇到同一组件在不同地方显示怪异的情况（尤其是 `</span>flex<span class="string">` 的排版规则比较“灵活”）。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### Typescript</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">ts 的类型检查非常实用，比如某个 interface 过了几天你不一定能记住有哪些字段，这是再去 Ctrl+F 之类查找就比较麻烦。但是 ts 的类型可以给出提示。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### 组件化</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">React 的组件化思想在写静态页面外观的时候就要贯彻。对于可复用的组件，应该将需要的参数打包到一个props interface中。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">## 设计页面行为</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### API</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">API 需要与后端和产品提前约定好，apifox 是约定 API 规范不错的工具。实际开发中，可以使用 postman 或者 curl 命令进行测试。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### 请求</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">响应返回无论正常和异常都不应该影响其他组件的正常工作。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### 状态管理</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">React 提供了一系列钩子函数。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### 路由</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Next.js 的一大优点在于路由管理的确较为方便。pages 页面的 tsx 路由与其文件名绑定。此外，Next.js 提供的 useRouter hook 也比较好用。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>ts</span><br><span class="line"><span class="keyword">import</span> &#123;useRouter&#125; <span class="keyword">from</span> <span class="string">&quot;next/router&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> router = <span class="title function_">useRouter</span>();</span><br><span class="line">router.<span class="title function_">push</span>(<span class="string">&quot;/&quot;</span>); <span class="comment">// 跳转至根页面</span></span><br><span class="line">router.<span class="title function_">back</span>(); <span class="comment">// 路由回退</span></span><br><span class="line"><span class="keyword">const</span> &#123; problem_set &#125; = router.<span class="property">query</span>; <span class="comment">// 查询参数</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="前后端联调"><a href="#前后端联调" class="headerlink" title="前后端联调"></a>前后端联调</h2><h2 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h2><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>如果是手动配置数据库等敏感信息应该将其放进 <code>.env</code> 等 <code>.gitignore</code> 的文件中，否则传入 github public repo 等公开的地方几乎无法被删净。</p>
+<h3 id="开发文档"><a href="#开发文档" class="headerlink" title="开发文档"></a>开发文档</h3><p>写个开发文档记录自己的进度还挺好玩的。无论是 <code>fix error</code> 还是 <code>add function</code> 都会给自己带来十足的成就感，也许这就是写代码的乐趣（笑）。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>仅仅使用 React 和基于 React 的 Next.js 写个简单的页面已经绰绰有余，但在实际的开发环境中代码工程量远远超出于此，我们还有很多工具和技术栈需要学习。</p>
+
       
     </div>
     <footer class="article-footer">
@@ -237,7 +254,7 @@
         
           
           
-            <img data-src="/covers/Image_1728916030959.jpg" data-sizes="auto" alt="大一秋冬 课程回忆录" class="lazyload">
+            <img data-src="/covers/Image_1728838064560.jpg" data-sizes="auto" alt="大一秋冬 课程回忆录" class="lazyload">
           
         
         <a href="/2024/10/30/freshman-fall-winter/"></a>
@@ -254,14 +271,14 @@
       
         
         
-          <img data-src="/covers/Image_1728838069325.jpg" data-sizes="auto" alt="ChatRoom Development Guide" class="lazyload">
+          <img data-src="/covers/Image_1729354336724.jpg" data-sizes="auto" alt="Blog &amp; Notebook" class="lazyload">
         
       
-      <a href="/2024/09/06/ChatRoom/"></a>
+      <a href="/2024/06/29/Site/"></a>
       <div class="article-nav-caption">后一篇</div>
       <h3 class="article-nav-title">
         
-          ChatRoom Development Guide
+          Blog &amp; Notebook
         
       </h3>
     </div>
@@ -288,7 +305,7 @@
   <h3 class="toc-title">文章目录</h3>
   <div class="sidebar-toc-wrapper toc-div-class" >
       
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA%E9%A1%B5%E9%9D%A2%E5%A4%96%E8%A7%82"><span class="toc-number">1.</span> <span class="toc-text">构建页面外观</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.1.</span> <span class="toc-text">初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS-%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.2.</span> <span class="toc-text">CSS 样式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E5%90%8E%E7%AB%AF%E8%81%94%E8%B0%83"><span class="toc-number">2.</span> <span class="toc-text">前后端联调</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%82%E9%A1%B9"><span class="toc-number">3.</span> <span class="toc-text">杂项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">3.1.</span> <span class="toc-text">配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3"><span class="toc-number">3.2.</span> <span class="toc-text">开发文档</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">4.</span> <span class="toc-text">结语</span></a></li></ol>
       
   </div>
 </div>
@@ -309,7 +326,7 @@
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">3</div>
+    <div class="sidebar-state-number">2</div>
   </div>
 </div>
 <div class="sidebar-social">
@@ -379,10 +396,10 @@
       
         <div>
           <span class="icon-brush"></span>
-          5k
+          7.2k
           &nbsp;|&nbsp;
           <span class="icon-coffee"></span>
-          00:20
+          00:24
         </div>
       
       
@@ -411,7 +428,7 @@
   <h3 class="toc-title">文章目录</h3>
   <div class="sidebar-toc-wrapper toc-div-class" >
       
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA%E9%A1%B5%E9%9D%A2%E5%A4%96%E8%A7%82"><span class="toc-number">1.</span> <span class="toc-text">构建页面外观</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.1.</span> <span class="toc-text">初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS-%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.2.</span> <span class="toc-text">CSS 样式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E5%90%8E%E7%AB%AF%E8%81%94%E8%B0%83"><span class="toc-number">2.</span> <span class="toc-text">前后端联调</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%82%E9%A1%B9"><span class="toc-number">3.</span> <span class="toc-text">杂项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">3.1.</span> <span class="toc-text">配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3"><span class="toc-number">3.2.</span> <span class="toc-text">开发文档</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">4.</span> <span class="toc-text">结语</span></a></li></ol>
       
   </div>
 </div>
@@ -432,7 +449,7 @@
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">3</div>
+    <div class="sidebar-state-number">2</div>
   </div>
 </div>
 <div class="sidebar-social">
